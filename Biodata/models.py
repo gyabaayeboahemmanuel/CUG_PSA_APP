@@ -22,7 +22,7 @@ class ApplicantDetail(models.Model):
     MiddleName = models.CharField(max_length=255, blank=True,null=True,verbose_name="Middle Name" )
     DateofBirth = models.DateField(verbose_name="Date of Birth")
     Gender = models.CharField(choices = GENDER_CHOICE, max_length=20)
-    
+    PlaceofBirth=models.CharField(max_length=30, verbose_name="Place of Birth")
 
     def __str__(self) -> str:
         return self.Surname + " " +self.FirstName 
