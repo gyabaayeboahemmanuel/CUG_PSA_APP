@@ -34,13 +34,13 @@ STATUS_CHOICE = (
 
 class FamilyDetail(models.Model):
     FatherFullName = models.CharField(max_length=255, verbose_name="Father Full Name")
-    FatherStatus = models.CharField(choices=STATUS_CHOICE, max_length=20, verbose_name=)
+    FatherStatus = models.CharField(choices=STATUS_CHOICE, max_length=20, verbose_name="Father's Status")
     FatherAddress =  models.CharField(max_length=255, verbose_name="Father's Address", null=True, blank=True)
     FatherPhoneNumber =  models.CharField(max_length=255, verbose_name="Father's Phone Number", null=True, blank=True)
     FatherEmail =  models.EmailField(verbose_name="Father's Email", null=True, blank=True)
     FatherOccupation = models.CharField(max_length=255, verbose_name="Father's Occupation")
     MotherFullName = models.CharField(max_length=255, verbose_name="Mother Full Name")
-    MotherStatus = models.CharField(choices=STATUS_CHOICE, max_length=20)
+    MotherStatus = models.CharField(choices=STATUS_CHOICE, max_length=20, verbose_name="Mother's Status")
     MotherAddress =  models.CharField(max_length=255, verbose_name="Mother's Address", null=True, blank=True)
     MotherPhoneNumber =  models.CharField(max_length=255, verbose_name="Mother's Phone Number", null=True, blank=True)
     MotherEmail =  models.EmailField(verbose_name="Mother's Email", null=True, blank=True)
